@@ -314,7 +314,7 @@ case "$2" in
         restart
         ;;
     *)
-        echo "Usage: $0 {client|server|api|dashboard} {start|stop|status|restart}"
+        echo "Usage: $0 {client|agent|server|api|dashboard} {start|stop|status|restart}"
         exit 2
 esac
 

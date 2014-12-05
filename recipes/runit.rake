@@ -48,7 +48,7 @@ Bunchr::Software.new do |t|
   t.install_commands << "chmod 0755 #{install_prefix}/bin/sensu-ctl"
 
   unless t.ohai['os'] == 'windows'
-    ["client","server","api","dashboard"].each do |sv|
+    ["client", "agent","server","api","dashboard"].each do |sv|
       FileUtils.mkdir_p("#{sv_path}/sensu-#{sv}/supervise")
       File.open("#{scripts_dir}/sensu-sv-run.sh.erb") do |template|
         @sv = sv

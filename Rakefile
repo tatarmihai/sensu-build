@@ -60,7 +60,7 @@ Bunchr::Packages.new do |t|
     t.include_software('ruby')
     t.include_software('runit')
     t.include_software('sensu')
-    t.include_software('sensu_plugin')
+    t.include_software('sensu-plugin')
     t.include_software('sensu_configs')
     t.include_software('sensu_bin_stubs')
 
@@ -77,6 +77,7 @@ Bunchr::Packages.new do |t|
     t.files << '/etc/init.d/sensu-service'
     t.files << '/etc/init.d/sensu-api'
     t.files << '/etc/init.d/sensu-client'
+    t.files << '/etc/init.d/sensu-agent'
     t.files << '/etc/init.d/sensu-server'
 
     # need to enumerate config files for fpm

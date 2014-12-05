@@ -32,16 +32,16 @@ case "$system" in
     redhat)
         yum clean all
         install_epel
-        yum -y install curl m4 make gcc gcc-c++ rpm-build
+        yum -y install curl m4 make gcc gcc-c++ rpm-build git
         ;;
 
     debian)
         apt-get update
-        apt-get -y install curl m4 g++ make gcc
+        apt-get -y install curl m4 g++ make gcc git
         ;;
 
     suse)
-        zypper --non-interactive install curl m4 make gcc gcc-c++ rpm-build
+        zypper --non-interactive install curl m4 make gcc gcc-c++ rpm-build git
         ;;
 
     *)

@@ -14,6 +14,6 @@ Then use `sensu-ctl` to manage individual Sensu components.
 2. Use systemd to manage each Sensu component.
 ----------------------------------------------
 
-Alternatively, use the `sensu-{client,api,server,dashboard}.service` unit
+Alternatively, use the `sensu-{client,agent,api,server,dashboard}.service` unit
 files as templates, customize to taste. Then use standard
 `systemctl {start,stop,restart,...}` commands to control them.
